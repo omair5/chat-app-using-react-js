@@ -17,7 +17,7 @@
 }
 
 .loginContainer {
-  background-color: rgba(14, 13, 13, 0.8);
+  background-color: rgba(0, 23, 58, 0.9);
   height: 100vh;
   width: 100vw;
   border-radius: 5px;
@@ -48,11 +48,6 @@
   color: white;
   font-weight: bolder;
   padding: 15px 0px;
-}
-
-.mainIcon {
-  color: white;
-  font-size: 120px;
 }
 
 .buttonContainer {
@@ -105,13 +100,10 @@
   margin-right: 5px;
 }
 
-.chatie {
-  color: #2178fa;
-  font-weight: 800;
-}
-
 .ie {
-  font-weight: 400;
+  color: #2ccd70;
+  margin-left: 10px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 700px) {

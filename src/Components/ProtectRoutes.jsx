@@ -1,20 +1,24 @@
 import React, { useContext, useEffect } from 'react';
-import { useHistory } from 'react-router';
+// import { useHistory } from 'react-router';
+import { Redirect } from 'react-router-dom';
 import { AuthContext } from '../Contexts/AuthContext';
 
 const ProtectRoutes = ({ Component }) => {
-    const history = useHistory()
+    // const history = useHistory()
     const { user } = useContext(AuthContext)
 
-    useEffect(() => {
-        if (!user) {
-            history.push('/')
-        }
-    }, [user, history])
+    // useEffect(() => {
+    //     if (!user) {
+    //         history.push('/')
+    //     }
+    // }, [user, history])
 
     return (
         <>
-            <Component />
+            {
+                user ? <Component /> : <Redirect to={'/'} />
+            }
+
         </>
     );
 }

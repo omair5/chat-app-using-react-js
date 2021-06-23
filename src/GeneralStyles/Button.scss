@@ -1,6 +1,6 @@
-@mixin ButtonStyles($bgColor) {
+@mixin ButtonStyles($bgColor, $buttonWidth) {
     background-color: $bgColor;
-    width: 250px;
+    width: $buttonWidth;
     padding: 15px;
     outline: none;
     border-radius: 3px;
