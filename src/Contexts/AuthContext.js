@@ -8,7 +8,6 @@ export const AuthContext = createContext()
 // CREATING PROVIDER
 export const AuthProvider = ({ children }) => {
     const history = useHistory()
-    const [loading, setLoading] = useState(true)
     const [user, setUser] = useState({})
 
     useEffect(() => {
@@ -17,7 +16,6 @@ export const AuthProvider = ({ children }) => {
             console.log(user)
             if (mounted) {
                 setUser(user)
-                setLoading(false)
                 if (user) {
                     history.push('/chats')
                 }

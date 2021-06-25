@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './index.module.css'
-import { WechatOutlined, GoogleSquareFilled, FacebookFilled } from '@ant-design/icons';
+import { GoogleSquareFilled, FacebookFilled } from '@ant-design/icons';
 import 'firebase/app'
 import { auth } from '../../firebase'
 import firebase from 'firebase/app';

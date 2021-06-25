@@ -1,0 +1,22 @@
+@import "../../GeneralStyles/HorizontalAndVerticalCenter.scss";
+
+.center {
+    display: flex;
+    height: 97vh;
+    width: 97%;
+    @include HorizontalAndVerticalCenter;
+    animation: load 3s linear infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes load {
+    0% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+    0% {
+        transform: scale(0.98);
+    }
+}
